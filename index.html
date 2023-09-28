@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/rocket.png">
+    <title>Xiangshan (Vincent) Tan</title>
+</head>
+<body>
+    <!-- 照片和姓名 -->
+    <header>
+        <div id="profile">
+            <img src="img/prof_pic.jpg" alt="Your Photo">
+            <h1>Xiangshan (Vincent) Tan</h1>
+            <h2>檀香山</h2>
+        </div>
+    </header>
+
+    <!-- 基本介绍 -->
+    <section id="intro">
+        <p>Welcome! My name is Xiangshan Tan, and you can call me Vincent as well. I'm currently a fourth-year undergraduate student at <a>College of Control Science and Engineering(CSE)</a>, Zhejiang University(ZJU).</p`>
+    </section>
+
+    <!-- 科研经历 -->
+    <section id="research">
+        <h2>Research Experience</h2>
+        <div class="research-item">
+            <h3>Transcribe3D: Grounding LLMs Using Transcribed Information for 3D Referential Reasoning with Self-Corrected Finetuning</h3>
+            <p><strong>Duration:</strong> Jul 2023 - Now</p>
+            <p><strong>Laboratory:</strong> Robot Intelligence through Perception Labotory(RIPL), Toyota Technological Institue at Chicago(TTIC)</p>
+            <p><strong>Supervisor:</strong> <a href="https://home.ttic.edu/~mwalter/">Matthew R. Walter</a></p>
+            <p><strong>Collaborator:</strong> <a href="https://sites.google.com/view/jiadingfang/home/">Jiading Fang</a>, <a href="https://shengjie-lin.github.io">Shengjie Lin </a></p>
+            <p><strong>Role:</strong> Undertook most of the work in implementing the model and conducting experiments; co-first author</p>
+            <p><strong>Description:</strong> Description of your research project</p>
+            <img src="img/transcribe3d_pipeline.png" alt="Research 1 Photo">
+            <video controls>
+                <source src="video/Transcribe3D_supp_video_compressed.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+    
+        <div class="research-item">
+            <h3>3D Follow-up Gluing System based on Computer Vision</h3>
+            <p><strong>Duration:</strong> Mar 2022 - Aug 2022</p>
+            <p><strong>Laboratory:</strong> Industrial Control Institute, Zhejiang University</p>
+            <p><strong>Supervisor:</strong> Yiping Feng, Shan liu</p>
+            <p><strong>Collaborator:</strong> <a">Xun Zhou</a>, <a>Dong Xu</a></p>
+            <p><strong>Role:</strong> Leader of Student Research Training Program (SRTP) Group</p>
+            <p><strong>Description:</strong>Led the project of 3D Follow-up Gluing System based on Computer Vision. Designed and implemented a planning algorithm to glue moving objects on a conveyor belt with unknown surface shapes and velocity using a 6-joints manipulator. Utilized consecutive frames of RGBD images to estimate object velocity and reconstruct object surface, reducing random error in single frame from sensor. Participated in the CIMC (“Siemens Cup” China Intelligent Manufacturing Challenge) with this project and won the Grand Prize in East China area.</p>
+            <img src="research2_photo.jpg" alt="Research 2 Photo">
+            <video controls>
+                <source src="research2_video.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+    
+        <div class="research-item">
+            <h3>Research Experience 3</h3>
+            <p><strong>Title:</strong> Your research title</p>
+            <p><strong>Duration:</strong> Month Year - Month Year</p>
+            <p><strong>Laboratory:</strong> Laboratory name</p>
+            <p><strong>Supervisor:</strong> Supervisor's name</p>
+            <p><strong>Project Description:</strong> Description of your research project</p>
+            <img src="research3_photo.jpg" alt="Research 3 Photo">
+            <video controls>
+                <source src="research3_video.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+    </section>
+    
+    <!-- 项目 -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- 太空机械臂 -->
+        <div class="research-item">
+            <h3>7-DOF space robot 'walking' on the space station</h3>
+            <p><strong>Course:</strong> Bipedal Robot </p>
+            <p><strong>Time:</strong> Jan 2023</p>
+            <p><strong>Supervisor:</strong> <a>Chunlin Zhou</a></p>
+            <p><strong>Role:</strong></p>
+            <p><strong>Project Description:</strong> Description of your research project</p>
+            <video controls poster="/img/7-DOF_Space_Robot_poster.jpg">
+                <source src="video/7-DOF_Space_Robot.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+
+        <!-- 移动机器人-navigation -->
+        <div class="research-item">
+            <h3>Navigation with A*/RRT* path planning and DWA</h3>
+            <p><strong>Course:</strong> Wheeled Robot & Mobile tech</p>
+            <p><strong>Time:</strong> May 2022 & Apr 2023</p>
+            <p><strong>Supervisor:</strong> <a>Yue Wang, Rong Xiong</a></p>
+            <p><strong>Role:</strong></p>
+            <p><strong>Project Description:</strong> Description of your research project</p>
+            
+            <p><strong><br>A* path planning & DWA (2x speed):</strong></p>
+            <video controls poster="/img/DWA_poster.jpg">
+                <source src="video/DWA.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+            
+            <p><strong><br>Adding an obstacle on the <span style="color: rgb(223, 223, 53)">path planned by A*</span> to see if DWA can avoid it (2x speed):</strong></p>
+            <video controls poster="/img/navigation_poster.jpg">
+                <source src="video/navigation.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+            <p class="center-text">top half: Gazebo &nbsp;&nbsp; bottom half: RViz</p>
+            
+            <p><strong><br>A simple demo on real robot:</strong></p>
+            <video controls>
+                <source src="video/navigation_real.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+
+            <p><strong><br>RRT* path planning & DWA that could avoid dynamic obstacles:</strong></p>
+            <video controls>
+                <source src="video/DWAdynamic.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+            <!-- <p class="center-text">top half: Gazebo &nbsp;&nbsp; bottom half: RViz</p> -->
+        </div>
+
+        <!-- ICP -->
+        <div class="research-item">
+            <h3>ICP & mapping</h3>
+            <p><strong>Course:</strong> Mobile Tech </p>
+            <p><strong>Time:</strong> Apr 2023</p>
+            <p><strong>Supervisor:</strong> <a>Rong Xiong</a></p>
+            <p><strong>Role:</strong></p>
+            <p><strong>Project Description:</strong> Description of your research project</p>
+            <video controls>
+                <source src="video/ICP.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+    </section>
+</body>
+</html>
