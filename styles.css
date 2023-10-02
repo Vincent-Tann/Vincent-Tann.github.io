@@ -2,12 +2,19 @@
 body {
     font-family: 'Times New Roman', sans-serif;
     text-align: center;
-    /* font-size: 20px; */
-    font-size: 1.25rem;
+    font-size: 20px;
+    /* font-size: 1rem; */
     margin: 0 auto; /* 添加左右页边距并使内容居中 */
     max-width: 1000px; /* 可以根据需要调整页面宽度 */
     padding: 0 50px; /* 可选的内边距，根据需要进行调整 */
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* 在小屏幕上使用较小的字体大小 */
+    }
+}
+
 
 /* 设置个人资料样式 */x
 #profile {
