@@ -12,6 +12,7 @@ body {
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px; /* 在小屏幕上使用较小的字体大小 */
+        padding: 0 15px;
     }
 }
 
