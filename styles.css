@@ -23,7 +23,7 @@ body {
 }
 
 #profile img {
-    border-radius: 50%; /* 将图片剪裁为圆形 */
+    border-radius: 50%; 
     max-width: 200px;
     margin: 0 auto;
 }
@@ -70,11 +70,21 @@ section {
     margin: 10px auto;
 }
 
+
 .research-item video {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     display: block;
     margin: 10px auto;
+}
+
+@media screen and (max-width: 1400px) {
+    .research-item video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
 }
 
 .center-text {
