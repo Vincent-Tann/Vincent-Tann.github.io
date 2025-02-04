@@ -17,7 +17,7 @@
             <h1>Xiangshan (Vincent) Tan</h1>
             <h2>檀香山</h2>
             <!-- <p>Email: vincent.tan5131 [at] gmail [dot] com | <a href="file/CV_XiangshanTan_1213.pdf">[CV]</a></p> -->
-            <p>Email: vincent.tan5131 [at] gmail [dot] com</p>
+            <p>Email: vincenttann [at] ttic [dot] edu</p>
             <!-- <p>CV:</p>
             <object data="file/CV_XiangshanTan_1213.pdf" type="application/pdf"></object> -->
         </div>
@@ -25,17 +25,24 @@
 
     <!-- 基本介绍 -->
     <section id="intro">
-        <p>Welcome! My name is Xiangshan Tan, and you can call me Vincent as well. I'm currently a fourth-year undergraduate student at <a href="http://www.cse.zju.edu.cn/cseenglish/main.htm">College of Control Science and Engineering(CSE)</a>, <a href="https://www.zju.edu.cn/english/">Zhejiang University(ZJU)</a>. I also took courses in Advanced Honor Class of Engineering Education(ACEE), <a href="http://ckc.zju.edu.cn/ckcen/_t1906/main.psp">Chu Kochen Honors College</a> as a minor. </p>
-        <p>My research interests include robotics(particularly in robot navigation and multi-robot coordination), robot learning, 3D computer vision, and large language models.</p>
-        <p>Currently, I am a visiting student at <a href="https://ttic.edu/ripl/">Intelligence through Perception Labotory(RIPL)</a>, <a href="https://ttic.edu"> Toyota Technological Institute at Chicago(TTIC)</a>, where I am advised by Prof. <a href="https://home.ttic.edu/~mwalter/">Matthew R. Walter</a>. I am conducting research on language grounding and spatial reasoning using LLM, as detailed in the Research Experience section below.</p>
+        <p>Welcome! My name is Xiangshan Tan, and you can call me Vincent as well. I'm currently a PhD student at the <a href="https://ttic.edu/ripl/">Robot Intelligence through Perception Laboratory (RIPL)</a> at <a href="https://ttic.edu">Toyota Technological Institute at Chicago (TTIC)</a>, where I am advised by Prof. <a href="https://home.ttic.edu/~mwalter/">Matthew R. Walter</a>. Before starting my PhD, I obtained my Bachelor's degree from the <a href="http://www.cse.zju.edu.cn/cseenglish/main.htm">College of Control Science and Engineering (CSE)</a> at <a href="https://www.zju.edu.cn/english/">Zhejiang University (ZJU)</a>.</p>
+          
+        
+        <!-- I also took courses in Advanced Honor Class of Engineering Education(ACEE), <a href="http://ckc.zju.edu.cn/ckcen/_t1906/main.psp">Chu Kochen Honors College</a> as a minor. </p> -->
+
+        <p>My research interests include robot learning, contact-rich manipulation, tactile sensing, and spatial understading in 3D space.</p>
+
+        <p> My personal website is currently under construction and will be ready soon.</p>
+        
+        <!-- <p>Currently, I am a visiting student at <a href="https://ttic.edu/ripl/">Robot Intelligence through Perception Labotory(RIPL)</a>, <a href="https://ttic.edu"> Toyota Technological Institute at Chicago(TTIC)</a>, where I am advised by Prof. <a href="https://home.ttic.edu/~mwalter/">Matthew R. Walter</a>. I am conducting research on language grounding and spatial reasoning using LLM, as detailed in the Research Experience section below.</p> -->
     </section>
 
-    <!-- 科研经历 -->
-    <section id="research">
+
+    <!-- <section id="research">
         <h2>Research Experience</h2>
         <div class="research-item" id="transcribe3d">
             <h3>Transcribe3D: Grounding LLMs Using Transcribed Information for 3D Referential Reasoning with Self-Corrected Finetuning</h3>
-            <p><strong>Duration:</strong> Jul 2023 - Now</p>
+            <p><strong>Duration:</strong> Jul 2023 - Mar 2024</p>
             <p><strong>Laboratory:</strong> Robot Intelligence through Perception Laboratory(RIPL), Toyota Technological Institute at Chicago(TTIC)</p>
             <p><strong>Supervisor:</strong> Prof. <a href="https://home.ttic.edu/~mwalter/">Matthew R. Walter</a></p>
             <p><strong>Collaborator:</strong> <a href="https://sites.google.com/view/jiadingfang/home/">Jiading Fang</a>, <a href="https://shengjie-lin.github.io">Shengjie Lin </a></p>
@@ -43,17 +50,16 @@
             <p><strong>Abstract:</strong> If robots are to work effectively alongside people, they must be able to interpret natural language references to objects in their 3D environment. Understanding 3D referring expressions is challenging---it requires the ability to both parse the 3D structure of the scene as well as to correctly ground free-form language in the presence of distraction and clutter. 
             We propose Transcribe3D, a simple yet effective approach to interpreting 3D referring expressions, which converts 3D scene geometry into a textual representation and takes advantage of the common sense reasoning capability of large language models (LLMs) to make inferences about the objects in the scene and their interactions. 
             We experimentally demonstrate that employing LLMs in this <span style="font-style: italic;">zero-shot</span> fashion outperforms contemporary methods. We then improve upon the zero-shot version of Transcribe3D by performing <span style="font-style: italic;">finetuning from self-correction</span> in order to generalize to new data. We achieve state-of-the-art results on Referit3D and ScanRefer, prominent benchmarks for 3D referential language. We also show that our method enables real robots to perform pick-and-place tasks given queries that contain challenging referring expressions.</p>
-            <!-- <p><strong>Note:</strong> Our paper will soon be published on arXiv and submitted to CVPR.</p> -->
+
             <p><strong>Project Page: </strong><a href="https://ripl.github.io/Transcrib3D/">Transcrib3D(an updated version)</a></p>
             <p><strong>Accepted by: </strong><a href="https://openreview.net/forum?id=7j3sdUZMTF">LangRob @ CoRL 2023</a></p>
-            <!-- <img src="img/transcribe3d_pipeline.png" alt="Research 1 Photo"> -->
             <video controls>
                 <source src="video/Transcribe3D_supp_video_compressed.mp4" type="video/mp4">
                 Your browser does not support video playback.
             </video>
-        </div>
+        </div> -->
         
-        <br>
+        <!-- <br>
         <div class="research-item" id="glue">
             <h3>3D Follow-up Gluing System based on Computer Vision</h3>
             <p><strong>Duration:</strong> Mar 2022 - Aug 2022</p>
@@ -62,12 +68,11 @@
             <p><strong>Collaborator:</strong> <a">Xun Zhou</a>, <a>Dong Xu</a></p>
             <p><strong>Role:</strong> Leader of Student Research Training Program (SRTP) Group</p>
             <p><strong> Projcet Description:</strong> Led the project of 3D Follow-up Gluing System based on Computer Vision. Designed and implemented a planning algorithm to glue moving objects on a conveyor belt with unknown surface shapes and velocity using a 6-joints manipulator. Utilized consecutive frames of RGBD images to estimate object velocity and reconstruct object surface, reducing random error in single frame from sensor. Participated in the CIMC (“Siemens Cup” China Intelligent Manufacturing Challenge) with this project and won the Grand Prize in East China area.</p>
-            <!-- <img src="/img/GlueSystemStructure.png" alt="Research 2 Photo"> -->
             <video controls poster="img/system_pic.png">
                 <source src="video/GlueSystem.mp4" type="video/mp4">
                 Your browser does not support video playback.
             </video>
-        </div>
+        </div> -->
     
         <!-- <div class="research-item">
             <h3>Research Experience 3</h3>
@@ -82,15 +87,16 @@
                 Your browser does not support video playback.
             </video>
         </div> -->
+
+<!--         
     </section>
-    <br><br>
+    <br><br> -->
 
 
 
-    <!-- 项目 -->
-    <section id="projects">
+
+    <!-- <section id="projects">
         <h2>Projects</h2>
-        <!-- 太空机械臂 -->
         <div class="research-item" id="space-robot">
             <h3>7-DOF space robot 'walking' on the space station</h3>
             <p><strong>Course:</strong> Bipedal Mobile Robot Technology </p>
@@ -104,14 +110,12 @@
             </video>
         </div>
 
-        <!-- 移动机器人-navigation -->
         <br>
         <div class="research-item" id="navigation">
             <h3>Navigation with A*/RRT* path planning and DWA</h3>
             <p><strong>Course:</strong> Wheeled Mobile Robots and Enhanced Lab Training & Intelligent Mobile Technology</p>
             <p><strong>Time:</strong> May 2022 & Apr 2023</p>
             <p><strong>Supervisor:</strong> Prof. <a href="https://ywang-zju.github.io/">Yue Wang</a>, Prof. <a href="https://scholar.google.com/citations?user=1hI9bqUAAAAJ&hl=en">Rong Xiong</a></p>
-            <!-- <p><strong>Role:</strong></p> -->
             <p><strong>Project Description:</strong> In this navigation project, we implemented A* and Rapidly-exploring Random Tree *(RRT*) algorithms for global path planning in a known map, as well as Dynamic Window Approach(DWA) algorithm for online obstacle avoidance. Obstacles can be added to the map after path planning, and they can be either static or dynamic.</p>
             
             <p><strong><br>A* path planning & DWA (2x speed):</strong></p>
@@ -139,24 +143,21 @@
                 <source src="video/DWAdynamic.mp4" type="video/mp4">
                 Your browser does not support video playback.
             </video>
-            <!-- <p class="center-text">top half: Gazebo &nbsp;&nbsp; bottom half: RViz</p> -->
         </div>
 
-        <!-- ICP -->
         <br>
         <div class="research-item" id="icp">
             <h3>ICP & mapping</h3>
             <p><strong>Course:</strong> Intelligent Mobile Technology </p>
             <p><strong>Time:</strong> Apr 2023</p>
             <p><strong>Supervisor:</strong> Prof. <a>Rong Xiong</a></p>
-            <!-- <p><strong>Role:</strong></p> -->
             <p><strong>Project Description:</strong> Implemented Iterative Closest Point(ICP) algorithm for robot localization and mapping with consecutive frames of point clouds detected by LiDAR.</p>
             <video controls>
                 <source src="video/ICP.mp4" type="video/mp4">
                 Your browser does not support video playback.
             </video>
         </div>
-    </section>
+    </section> -->
 
     <!-- clustrmaps -->
     <br><br>
