@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/rocket.png">
+    <title>Xiangshan (Vincent) Tan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 照片和姓名 -->
+    <header>
+        <div id="profile">
+            <img src="img/prof_pic2.jpg" alt="Your Photo">
+            <h1>Xiangshan (Vincent) Tan</h1>
+            <h2>檀香山</h2>
+            <!-- <p>Email: vincent.tan5131 [at] gmail [dot] com | <a href="file/CV_XiangshanTan_1213.pdf">[CV]</a></p> -->
+            <div class="profile-links" aria-label="Contact links">
+                <a class="profile-icon-link" href="mailto:vincenttann@ttic.edu" aria-label="Email Vincent">
+                    <img src="icon/email_icon2.png" alt="Email icon">
+                </a>
+                <a class="profile-icon-link" href="https://scholar.google.com/citations?user=0XbUhDUAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                    <img src="icon/gs_icon2.png" alt="Google Scholar icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro -->
+    <section id="intro">
+        <p>Welcome! My name is Xiangshan Tan, and you can call me Vincent as well. I'm currently a PhD student at the <a href="https://ttic.edu/ripl/">Robot Intelligence through Perception Laboratory (RIPL)</a> at <a href="https://ttic.edu">Toyota Technological Institute at Chicago (TTIC)</a>, where I am advised by Prof. <a href="https://home.ttic.edu/~mwalter/">Matthew R. Walter</a>. Before starting my PhD, I obtained my Bachelor's degree from the <a href="http://www.cse.zju.edu.cn/cseenglish/main.htm">College of Control Science and Engineering (CSE)</a> at <a href="https://www.zju.edu.cn/english/">Zhejiang University (ZJU)</a>.</p>
+          
+        
+        <!-- I also took courses in Advanced Honor Class of Engineering Education(ACEE), <a href="http://ckc.zju.edu.cn/ckcen/_t1906/main.psp">Chu Kochen Honors College</a> as a minor. </p> -->
+
+        <p>My research interests include robot learning, contact-rich manipulation, tactile sensing, and spatial understading in 3D space.</p>
+
+        <!-- <p> My personal website is currently under construction and will be ready soon.</p> -->
+        
+    </section>
+
+
+    <section id="selected-publications">
+        <h2>selected publications</h2>
+
+        <article class="publication-card">
+            <div class="publication-thumb">
+                <img src="img/HapCompass.png" alt="Preview image for HapCompass">
+            </div>
+            <div class="publication-content">
+                <h3 class="publication-title">HapCompass: A Rotational Haptic Device for Contact-Rich Robotic Teleoperation</h3>
+                <p class="publication-authors">
+                    <strong>Xiangshan Tan</strong>, Jingtian Ji, Tianchong Jiang, Pedro Lopes, and Matthew R. Walter
+                </p>
+                <p class="publication-conference">ICRA 2026</p>
+
+                <div class="publication-actions">
+                    <button class="pub-action-btn" type="button" data-toggle-target="abs-pub-0">ABS</button>
+                    <span class="pub-link-btn pub-link-btn-disabled" aria-disabled="true">PAPER</span>
+                    <a class="pub-link-btn" href="https://github.com/ripl/HapCompass" target="_blank" rel="noopener noreferrer">CODE</a>
+                    <a class="pub-link-btn" href="https://ripl.github.io/HapCompass/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+                    <a class="pub-link-btn" href="https://github.com/ripl/HapCompass" target="_blank" rel="noopener noreferrer">3D DESIGN</a>
+                </div>
+
+                <!-- Expanded abstract panel -->
+                <div id="abs-pub-0" class="pub-extra pub-abstract is-hidden">
+                    <p>
+                        The contact-rich nature of manipulation makes it a significant challenge for robotic
+                        teleoperation. While haptic feedback is critical for contact-rich tasks, providing intuitive
+                        directional cues within wearable teleoperation interfaces remains a bottleneck. Existing
+                        solutions, such as non-directional vibrations from handheld controllers, provide limited
+                        information, while vibrotactile arrays are prone to perceptual interference. To address these
+                        limitations, we propose HapCompass, a novel, low-cost wearable haptic device that renders 2D
+                        directional cues by mechanically rotating a single linear resonant actuator (LRA). We evaluated
+                        HapCompass's ability to convey directional cues to human operators and showed that it increased
+                        the success rate, decreased the completion time and the maximum contact force for teleoperated
+                        manipulation tasks when compared to vision-only and non-directional feedback baselines.
+                        Furthermore, we conducted a preliminary imitation-learning evaluation, suggesting that the
+                        directional feedback provided by HapCompass enhances the quality of demonstration data and, in
+                        turn, the trained policy.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="publication-card">
+            <div class="publication-thumb">
+                <img src="img/transcrib3d_framework_square.png" alt="Preview image for publication 1">
+            </div>
+            <div class="publication-content">
+                <h3 class="publication-title">Transcrib3D: 3D Referring Expression Resolution through Large Language Models</h3>
+                <p class="publication-authors">
+                    Jiading Fang<sup>*</sup>,
+                    <strong>Xiangshan Tan<sup>*</sup></strong>, Shengjie Lin<sup>*</sup>, Igor Vasiljevic, Vitor Guizilini,
+                    Hongyuan Mei, Rares Ambrus, Gregory Shakhnarovich, and
+                    Matthew R. Walter
+                </p>
+                <p class="publication-note"><sup>*</sup> Equal contribution.</p>
+                <p class="publication-conference">IROS 2025</p>
+                <!-- <p class="publication-time">2025</p> -->
+
+                <div class="publication-actions">
+                    <button class="pub-action-btn" type="button" data-toggle-target="abs-pub-1">ABS</button>
+                    <a class="pub-link-btn" href="https://arxiv.org/abs/2404.19221" target="_blank" rel="noopener noreferrer">PAPER</a>
+                    <a class="pub-link-btn" href="https://github.com/ripl/Transcrib3D" target="_blank" rel="noopener noreferrer">CODE</a>
+                    <a class="pub-link-btn" href="https://ripl.github.io/Transcrib3D/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+                    <a class="pub-link-btn" href="https://huggingface.co/spaces/Transcrib3D/Transcrib3D-Demo?logs=build" target="_blank" rel="noopener noreferrer">DEMO</a>
+                </div>
+
+                <!-- Expanded abstract panel -->
+                <div id="abs-pub-1" class="pub-extra pub-abstract is-hidden">
+                    <p>
+                        If robots are to work effectively alongside people, they must be able to interpret natural
+                        language references to objects in their 3D environment. Understanding 3D referring
+                        expressions is challenging -- it requires the ability to both parse the 3D structure of the
+                        scene and correctly ground free-form language in the presence of distraction and clutter. We
+                        introduce Transcrib3D, an approach that brings together 3D detection methods and the emergent
+                        reasoning capabilities of large language models (LLMs). Transcrib3D uses text as the
+                        unifying medium, which allows us to sidestep the need to learn shared representations
+                        connecting multi-modal inputs, which would require massive amounts of annotated 3D data. As a
+                        demonstration of its effectiveness, Transcrib3D achieves state-of-the-art results on 3D
+                        reference resolution benchmarks, with a great leap in performance from previous
+                        multi-modality baselines. To improve upon zero-shot performance and facilitate local
+                        deployment on edge computers and robots, we propose self-correction for fine-tuning that
+                        trains smaller models, resulting in performance close to that of large models. We show that
+                        our method enables a real robot to perform pick-and-place tasks given queries that contain
+                        challenging referring expressions.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+    </section>
+
+    <script>
+        // Toggle ABS/BIB panels and keep one open panel per card.
+        document.querySelectorAll('.publication-card').forEach((card) => {
+            const toggleButtons = card.querySelectorAll('.pub-action-btn');
+
+            toggleButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const targetId = button.getAttribute('data-toggle-target');
+                    const targetPanel = card.querySelector('#' + targetId);
+                    const shouldOpen = targetPanel.classList.contains('is-hidden');
+
+                    card.querySelectorAll('.pub-extra').forEach((panel) => panel.classList.add('is-hidden'));
+                    toggleButtons.forEach((btn) => btn.classList.remove('active'));
+
+                    if (shouldOpen) {
+                        targetPanel.classList.remove('is-hidden');
+                        button.classList.add('active');
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <!-- clustrmaps -->
+    <br><br>
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=120&t=tt&d=GcnaatPHS2YRIYNZ4Tc3UG8buiwduxove892G4JT7bs&co=ffffff&cmo=4cf3ed&cmn=ee15fb&ct=808080'></script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+/* Base page layout */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 10px 50px 0px;
+}
+
+@media screen and (max-width: 1400px) {
+    body {
+        font-size: 13px;
+        padding: 10px 15px 0px;
+    }
+}
+
+
+/* Profile section */
+#profile {
+    margin-top: 20px;
+}
+
+#profile img {
+    border-radius: 50%; 
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.profile-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 12px;
+}
+
+.profile-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.profile-icon-link:hover {
+    transform: translateY(-1px);
+    opacity: 0.85;
+}
+
+.profile-icon-link img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* Link colors to try:
+   muted blue:   #4f6d8a
+   slate blue:   #5d6f8c
+   mist blue:    #6884a0
+   soft steel:   #7190ab
+   airy blue:    #7a9bb5
+   cloud blue:   #84a5be
+   pale azure:   #8daec6
+   dusty indigo: #6a6f9c
+   muted purple: #7a6f9f
+   soft violet:  #8573a8
+   brighter lilac: #917db3
+   light orchid:   #9a84bc
+   airy purple:    #a18bc3
+   lavender mist:  #aa94cb
+   pastel violet:  #b39dd2
+*/
+a {
+    color: #7a9bb5;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: #7a9bb5;
+    text-decoration: underline;
+}
+
+/* Left-align intro text */
+#intro p   {
+    text-align: left;
+}
+
+/* Keep intro and selected publications at the same content width */
+#intro,
+#selected-publications {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Heading spacing */
+h1, h2 {
+    margin: 10px 0;
+}
+
+/* Section spacing */
+section {
+    margin-top: 30px;
+}
+
+/* Selected publications cards */
+#selected-publications {
+    text-align: left;
+}
+
+#selected-publications h2 {
+    margin-bottom: 20px;
+}
+
+.publication-card {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+    margin-bottom: 26px;
+}
+
+.publication-thumb {
+    width: 145px;
+    flex: 0 0 145px;
+}
+
+.publication-thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+}
+
+.publication-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.publication-title {
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    font-weight: 700;
+}
+
+.publication-authors,
+.publication-conference {
+    margin: 0 0 4px;
+    font-size: 1em;
+}
+
+.publication-note {
+    margin: 0 0 6px;
+    font-size: 0.9em;
+    color: #5f5f5f;
+}
+
+.publication-conference {
+    font-style: italic;
+}
+
+.publication-actions {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pub-action-btn,
+.pub-link-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border: 1px solid #2f2f2f;
+    border-radius: 2px;
+    background: #f5f5f5;
+    color: #111;
+    text-decoration: none;
+    font-size: 0.85rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.pub-action-btn:hover,
+.pub-link-btn:hover {
+    background: #ececec;
+}
+
+.pub-link-btn-disabled {
+    opacity: 0.55;
+    cursor: default;
+    pointer-events: none;
+}
+
+.pub-action-btn.active {
+    background: #d9d9d9;
+}
+
+.pub-extra {
+    margin-top: 12px;
+    padding: 12px 14px;
+    border: 1px dashed #9a9a9a;
+    background: #fbfbfb;
+    min-width: 0;
+}
+
+.pub-extra p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.pub-abstract p {
+    font-size: 0.9em;
+}
+
+.is-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .publication-card {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .publication-thumb {
+        width: 180px;
+        flex-basis: 180px;
+    }
+}
