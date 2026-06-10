@@ -56,6 +56,42 @@
 
         <article class="publication-card">
             <div class="publication-thumb">
+                <div class="publication-badge">arXiv</div>
+                <img src="img/benchmarking.png" alt="Preview image for What Are We Actually Benchmarking in Robot Manipulation">
+            </div>
+            <div class="publication-content">
+                <h3 class="publication-title">What Are We Actually Benchmarking in Robot Manipulation?</h3>
+                <p class="publication-authors">
+                    Tianchong Jiang, <strong>Xiangshan Tan</strong>, Samuel Wheeler, Luzhe Sun, Tewodros W. Ayalew, and Matthew Walter
+                </p>
+
+                <div class="publication-actions">
+                    <button class="pub-action-btn" type="button" data-toggle-target="abs-pub-4">ABS</button>
+                    <a class="pub-link-btn" href="https://arxiv.org/abs/2606.04233" target="_blank" rel="noopener noreferrer">PAPER</a>
+                    <a class="pub-link-btn" href="https://ripl.github.io/manipulation_benchmark_audit/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+                </div>
+
+                <div id="abs-pub-4" class="pub-extra pub-abstract is-hidden">
+                    <p>
+                        A robotics benchmark score measures success under one fixed evaluation setup, yet is routinely
+                        treated as evidence of general manipulation capability. We identify four failure modes, each
+                        of which weakens or invalidates a benchmark's role as a valid proxy for that capability:
+                        shortcut solvability, lack of statistical significance, creeping overfitting, and data-source
+                        dependence. We propose one diagnostic per failure mode. We audit LIBERO, CALVIN, SimplerEnv,
+                        RoboCasa, and RoboTwin 2.0 under these diagnostics. LIBERO and CALVIN fail multiple
+                        diagnostics. RoboCasa and RoboTwin 2.0 fail fewer, despite appearing far less often in recent
+                        progress claims. On LIBERO, a 0.09B probe with no language encoder scores at or near reported
+                        SOTA, and most reported gains are not provably statistically significant. On CALVIN,
+                        randomizing block poses within the training range drops performance for every tested policy.
+                        We release the four diagnostics with reference implementations for authors and reviewers to
+                        apply before treating a benchmark score as evidence of progress.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="publication-card">
+            <div class="publication-thumb">
                 <div class="publication-badge">ICRA 2026</div>
                 <img src="img/HapCompass.png" alt="Preview image for HapCompass">
             </div>
