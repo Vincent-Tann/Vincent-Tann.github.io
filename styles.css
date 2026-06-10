@@ -92,6 +92,7 @@ a:hover {
 
 /* Keep intro and selected publications at the same content width */
 #intro,
+#publications,
 #selected-publications,
 #other-publications {
     max-width: 920px;
@@ -111,11 +112,13 @@ section {
 }
 
 /* Selected publications cards */
+#publications,
 #selected-publications,
 #other-publications {
     text-align: left;
 }
 
+#publications h2,
 #selected-publications h2,
 #other-publications h2 {
     margin-bottom: 20px;

@@ -51,8 +51,8 @@
     </section>
 
 
-    <section id="selected-publications">
-        <h2>selected publications</h2>
+    <section id="publications">
+        <h2>publications</h2>
 
         <article class="publication-card">
             <div class="publication-thumb">
@@ -90,6 +90,70 @@
                         Furthermore, we conducted a preliminary imitation-learning evaluation, suggesting that the
                         directional feedback provided by HapCompass enhances the quality of demonstration data and, in
                         turn, the trained policy.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="publication-card">
+            <div class="publication-thumb">
+                <div class="publication-badge">ICRA 2026</div>
+                <img src="img/know_your_camera_robot.png" alt="Preview image for Know Your Camera">
+            </div>
+            <div class="publication-content">
+                <h3 class="publication-title">Do You Know Where Your Camera Is? View-Invariant Policy Learning with Camera Conditioning</h3>
+                <p class="publication-authors">
+                    Tianchong Jiang, Jingtian Ji, <strong>Xiangshan Tan</strong>, Jiading Fang, Anand Bhattad, Vitor Guizilini, and Matthew R. Walter
+                </p>
+                <p class="publication-conference">2026 IEEE International Conference on Robotics and Automation (ICRA), <span style="color: red;">Best Paper on Robot Learning Award</span></p>
+
+                <div class="publication-actions">
+                    <button class="pub-action-btn" type="button" data-toggle-target="abs-pub-2">ABS</button>
+                    <a class="pub-link-btn" href="http://arxiv.org/abs/2510.02268" target="_blank" rel="noopener noreferrer">PAPER</a>
+                    <a class="pub-link-btn" href="https://github.com/ripl/CamPoseOpensource" target="_blank" rel="noopener noreferrer">CODE</a>
+                    <a class="pub-link-btn" href="https://ripl.github.io/know_your_camera/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+                </div>
+
+                <div id="abs-pub-2" class="pub-extra pub-abstract is-hidden">
+                    <p>
+                        We study view-invariant imitation learning by explicitly conditioning policies on camera
+                        extrinsics. Using Plucker embeddings of per-pixel rays, we show that conditioning on
+                        extrinsics significantly improves generalization across viewpoints for standard behavior
+                        cloning policies, including ACT, Diffusion Policy, and SmolVLA. To evaluate policy
+                        robustness under realistic viewpoint shifts, we introduce six manipulation tasks in RoboSuite
+                        and ManiSkill that pair fixed and randomized scene variants, decoupling background cues from
+                        camera pose. Our analysis reveals that policies without extrinsics often infer camera pose
+                        using visual cues from static backgrounds in fixed scenes. This shortcut collapses when
+                        workspace geometry or camera placement shifts. Conditioning on extrinsics restores
+                        performance and yields robust RGB-only control without depth. We release the tasks,
+                        demonstrations, and code to facilitate reproducibility and future research.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="publication-card">
+            <div class="publication-thumb">
+                <div class="publication-badge">CoRL 2025</div>
+                <img src="img/flashback_fig.png" alt="Preview image for FlashBack">
+            </div>
+            <div class="publication-content">
+                <h3 class="publication-title">FlashBack: Consistency Model-Accelerated Shared Autonomy</h3>
+                <p class="publication-authors">
+                    Luzhe Sun, Jingtian Ji, <strong>Xiangshan Tan</strong>, and Matthew R. Walter
+                </p>
+                <p class="publication-conference">2025 Conference on Robot Learning (CoRL)</p>
+
+                <div class="publication-actions">
+                    <button class="pub-action-btn" type="button" data-toggle-target="abs-pub-3">ABS</button>
+                    <a class="pub-link-btn" href="https://arxiv.org/abs/2505.16892" target="_blank" rel="noopener noreferrer">PAPER</a>
+                    <a class="pub-link-btn" href="https://github.com/ripl/FlashBackSharedAutonomy" target="_blank" rel="noopener noreferrer">CODE</a>
+                    <a class="pub-link-btn" href="https://ripl.github.io/CSA-website/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
+                </div>
+
+                <div id="abs-pub-3" class="pub-extra pub-abstract is-hidden">
+                    <p>
+                        Shared autonomy is an enabling technology that provides users with control authority over robots that would otherwise be difficult if not impossible to directly control. Yet, standard methods make assumptions that limit their adoption in practice-for example, prior knowledge of the user's goals or the objective (i.e., reward) function that they wish to optimize, knowledge of the user's policy, or query-level access to the user during training. Diffusion-based approaches to shared autonomy do not make such assumptions and instead only require access to demonstrations of desired behaviors, while allowing the user to maintain control authority. However, these advantages have come at the expense of high computational complexity, which has made real-time shared autonomy all but impossible. To overcome this limitation, we propose Consistency Shared Autonomy (CSA), a shared autonomy framework that employs a consistency model-based formulation of diffusion. Key to CSA is that it employs the distilled probability flow of ordinary differential equations (PF ODE) to generate high-fidelity samples in a single step. This results in inference speeds significantly than what is possible with previous diffusion-based approaches to shared autonomy, enabling real-time assistance in complex domains with only a single function evaluation. Further, by intervening on flawed actions at intermediate states of the PF ODE, CSA enables varying levels of assistance. We evaluate CSA on a variety of challenging simulated and real-world robot control problems, demonstrating significant improvements over state-of-the-art methods both in terms of task performance and computational efficiency.
                     </p>
                 </div>
             </div>
@@ -141,75 +205,6 @@
                     </p>
                 </div>
 
-            </div>
-        </article>
-
-    </section>
-
-    <section id="other-publications">
-        <h2>other publications</h2>
-
-        <article class="publication-card">
-            <div class="publication-thumb">
-                <div class="publication-badge">ICRA 2026</div>
-                <img src="img/know_your_camera_robot.png" alt="Preview image for Know Your Camera">
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">Do You Know Where Your Camera Is? View-Invariant Policy Learning with Camera Conditioning</h3>
-                <p class="publication-authors">
-                    Tianchong Jiang, Jingtian Ji, <strong>Xiangshan Tan</strong>, Jiading Fang, Anand Bhattad, Vitor Guizilini, and Matthew R. Walter
-                </p>
-                <p class="publication-conference">2026 IEEE International Conference on Robotics and Automation (ICRA)</p>
-
-                <div class="publication-actions">
-                    <button class="pub-action-btn" type="button" data-toggle-target="abs-pub-2">ABS</button>
-                    <a class="pub-link-btn" href="http://arxiv.org/abs/2510.02268" target="_blank" rel="noopener noreferrer">PAPER</a>
-                    <a class="pub-link-btn" href="https://github.com/ripl/CamPoseOpensource" target="_blank" rel="noopener noreferrer">CODE</a>
-                    <a class="pub-link-btn" href="https://ripl.github.io/know_your_camera/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
-                </div>
-
-                <div id="abs-pub-2" class="pub-extra pub-abstract is-hidden">
-                    <p>
-                        We study view-invariant imitation learning by explicitly conditioning policies on camera
-                        extrinsics. Using Plucker embeddings of per-pixel rays, we show that conditioning on
-                        extrinsics significantly improves generalization across viewpoints for standard behavior
-                        cloning policies, including ACT, Diffusion Policy, and SmolVLA. To evaluate policy
-                        robustness under realistic viewpoint shifts, we introduce six manipulation tasks in RoboSuite
-                        and ManiSkill that pair fixed and randomized scene variants, decoupling background cues from
-                        camera pose. Our analysis reveals that policies without extrinsics often infer camera pose
-                        using visual cues from static backgrounds in fixed scenes. This shortcut collapses when
-                        workspace geometry or camera placement shifts. Conditioning on extrinsics restores
-                        performance and yields robust RGB-only control without depth. We release the tasks,
-                        demonstrations, and code to facilitate reproducibility and future research.
-                    </p>
-                </div>
-            </div>
-        </article>
-
-        <article class="publication-card">
-            <div class="publication-thumb">
-                <div class="publication-badge">CoRL 2025</div>
-                <img src="img/flashback_fig.png" alt="Preview image for FlashBack">
-            </div>
-            <div class="publication-content">
-                <h3 class="publication-title">FlashBack: Consistency Model-Accelerated Shared Autonomy</h3>
-                <p class="publication-authors">
-                    Luzhe Sun, Jingtian Ji, <strong>Xiangshan Tan</strong>, and Matthew R. Walter
-                </p>
-                <p class="publication-conference">2025 Conference on Robot Learning (CoRL)</p>
-
-                <div class="publication-actions">
-                    <button class="pub-action-btn" type="button" data-toggle-target="abs-pub-3">ABS</button>
-                    <a class="pub-link-btn" href="https://arxiv.org/abs/2505.16892" target="_blank" rel="noopener noreferrer">PAPER</a>
-                    <a class="pub-link-btn" href="https://github.com/ripl/FlashBackSharedAutonomy" target="_blank" rel="noopener noreferrer">CODE</a>
-                    <a class="pub-link-btn" href="https://ripl.github.io/CSA-website/" target="_blank" rel="noopener noreferrer">WEBSITE</a>
-                </div>
-
-                <div id="abs-pub-3" class="pub-extra pub-abstract is-hidden">
-                    <p>
-                        Shared autonomy is an enabling technology that provides users with control authority over robots that would otherwise be difficult if not impossible to directly control. Yet, standard methods make assumptions that limit their adoption in practice-for example, prior knowledge of the user's goals or the objective (i.e., reward) function that they wish to optimize, knowledge of the user's policy, or query-level access to the user during training. Diffusion-based approaches to shared autonomy do not make such assumptions and instead only require access to demonstrations of desired behaviors, while allowing the user to maintain control authority. However, these advantages have come at the expense of high computational complexity, which has made real-time shared autonomy all but impossible. To overcome this limitation, we propose Consistency Shared Autonomy (CSA), a shared autonomy framework that employs a consistency model-based formulation of diffusion. Key to CSA is that it employs the distilled probability flow of ordinary differential equations (PF ODE) to generate high-fidelity samples in a single step. This results in inference speeds significantly than what is possible with previous diffusion-based approaches to shared autonomy, enabling real-time assistance in complex domains with only a single function evaluation. Further, by intervening on flawed actions at intermediate states of the PF ODE, CSA enables varying levels of assistance. We evaluate CSA on a variety of challenging simulated and real-world robot control problems, demonstrating significant improvements over state-of-the-art methods both in terms of task performance and computational efficiency.
-                    </p>
-                </div>
             </div>
         </article>
     </section>
